@@ -28,7 +28,7 @@
 
 
 							<li><a href="${contextRoot}/home">Home</a></li>
-							<li class="active">All Products</li>
+							<li class="active">All Hotels</li>
 
 
 						</ol>
@@ -44,7 +44,7 @@
 
 
 							<li><a href="${contextRoot}/home">Home</a></li>
-							<li class="active">Category</li>
+							<li class="active">City</li>
 							<li class="active">${category.name}</li>
 
 
@@ -71,9 +71,9 @@
 							<tr>
 								<th></th>
 								<th>Name</th>
-								<th>Brand</th>
+								<!-- <th>Brand</th> -->
 								<th>Price</th>
-								<th>Qty. Available</th>
+								<th>Rating</th>
 								<th></th>
 							
 							</tr>
@@ -86,9 +86,9 @@
 							<tr>
 								<th></th>
 								<th>Name</th>
-								<th>Brand</th>
+								<!-- <th>Brand</th> -->
 								<th>Price</th>
-								<th>Qty. Available</th>
+								<th>rating</th>
 								<th></th>
 							
 							</tr>

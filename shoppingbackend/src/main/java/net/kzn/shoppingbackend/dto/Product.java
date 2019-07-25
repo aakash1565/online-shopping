@@ -31,14 +31,14 @@ public class Product implements Serializable {
 	private String code;
 	@NotBlank(message = "Please enter the product name!")
 	private String name;
-	@NotBlank(message = "Please enter the brand name!")
+	@JsonIgnore
 	private String brand;
 	@NotBlank(message = "Please enter the description!")
 	private String description;
 	@Column(name = "unit_price")
 	@Min(value = 1, message="Please select at least one value!")
 	private double unitPrice;
-	private int quantity;
+	private String quantity;
 	@Column(name = "is_active")	
 	private boolean active;
 	@Column(name = "category_id")
@@ -49,6 +49,7 @@ public class Product implements Serializable {
 	private int supplierId;
 	private int purchases;
 	private int views;
+	private String graph;
 	
 	
 	@Transient
@@ -108,10 +109,10 @@ public class Product implements Serializable {
 	public void setUnitPrice(double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
-	public int getQuantity() {
+	public String getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(int quantity) {
+	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
 	public boolean isActive() {
@@ -147,6 +148,12 @@ public class Product implements Serializable {
 
 	public void setViews(int views) {
 		this.views = views;
+	}
+	public String getGraph() {
+		return graph;
+	}
+	public void setGraph(String graph) {
+		this.graph = graph;
 	}
 
 	

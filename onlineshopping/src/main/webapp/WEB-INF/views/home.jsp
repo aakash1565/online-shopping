@@ -28,19 +28,19 @@
 						<div class="carousel-inner">
 							
 							<div class="item active">
-								<img class="slide-image" src="${images}/banner1.jpg"
+								<img class="slide-image" src="${images}/pp1.jpeg"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="${images}/banner2.jpg"
+								<img class="slide-image" src="${images}/pp2.jpeg"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="${images}/banner3.jpg"
+								<img class="slide-image" src="${images}/pp3.jpeg"
 									alt="">
 							</div>
 							<div class="item">
-								<img class="slide-image" src="${images}/banner4.jpg"
+								<img class="slide-image" src="${images}/pp4.jpeg"
 									alt="">
 							</div>
 						</div>
@@ -58,7 +58,7 @@
 
 				<div class="row">
                 	<div class="col-xs-12">
-                		<h3>Our Most Viewed Products</h3>
+                		<h3>Hotels Available</h3>
                 		<hr/>
                 	</div>
                 </div>
@@ -67,7 +67,7 @@
                 	
                     <div class="col-sm-4" ng-repeat="product in pCtrl.mvProducts">                    	
                         <div class="thumbnail">
-                            <img ng-src="${images}/{{product.code}}.jpg" alt="{{product.name}}" class="landingImg">
+                            <img ng-src="${images}/{{product.code}}.jpeg" alt="{{product.name}}" class="landingImg">
                             <h5>{{product.name}}</h5>
                             <hr/>
                             <div class="caption">
@@ -79,15 +79,15 @@
                         
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                  <%--   <div class="col-sm-4 col-lg-4 col-md-4">
                         <h4>Checkout more products!</h4>
                         <hr/>
                         <a class="btn btn-primary" href="${contextRoot}/show/all/products">More Products</a>
-                    </div>
+                    </div> --%>
 
                 </div>
 				
-				<div class="row">
+				<%-- <div class="row">
                 	<div class="col-xs-12">
                 		<h3>Our Most Purchased Products</h3>
                 		<hr/>
@@ -114,7 +114,7 @@
                         <a class="btn btn-primary" href="${contextRoot}/show/all/products">More Products</a>
                     </div>
 
-                </div>
+                </div> --%>
 
 		</div>
 
